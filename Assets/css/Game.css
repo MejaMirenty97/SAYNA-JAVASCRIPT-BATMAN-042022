@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400&family=Rajdhani:wght@500&family=Raleway:wght@400;500&display=swap');
+
+/* font-family: 'Rajdhani', sans-serif; css rules rajdhani */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400&family=Rajdhani:wght@500&family=Raleway:wght@400;500&family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400&family=Rajdhani:wght@500&family=Raleway:wght@400;500&family=Space+Grotesk:wght@300;400&display=swap');
+
+/* font-family: 'Space Grotesk', sans-serif; css rules space grotesk */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --yellow-color: #FFFF00;
+    --black1-color: #0D0E09;
+    --black2-color: #000000;
+    --white-color: #ffffff;
+    --blue-color: #19567D;
+    --red-color: #B11313;
+    --moutarde-color: #F8F184;
+    --bleu-ad-color: linear-gradient(to right bottom, #adc09f, #19587d);
+    --rouge-ad-color: linear-gradient(to right, #d3af82, #890008);
+    --az-color: #C4C4C4;
+    --grey-color: linear-gradient(to right bottom, #9ea68f, #010405);
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 36px;
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+li a {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 36px;
+}
+
+label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+input {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+option {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+button {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+}
+
+h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+}
+
+
+/* section header */
+
+.Menu {
+    width: 400px;
+}
+
+.Navigateur {
+    padding-left: 25vh;
+    padding-right: 20vh;
+}
+
+.batman {
+    height: 130vh;
+    background-image: url("../Illustrations/Game/Batgame1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Game {
+    position: relative;
+}
+
+.letsplay {
+    padding-top: 45vh;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.letsplay h1 {
+    width: 500px;
+    margin-left: 25vh;
+}
+
+.scroll {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    left: 85%;
+    top: 25%;
+}
+
+.scroll a img {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.voir {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    width: 120px;
+    border: none;
+    border-radius: 0;
+    background-image: var(--rouge-ad-color);
+    opacity: 75%;
+    font-size: small;
+}
+
+.liste li {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.liste li a {
+    color: var(--white-color);
+    transition: all 1s linear;
+}
+
+.liste li a:hover {
+    color: var(--yellow-color);
+}
+
+li.active::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: var(--white-color);
+    left: 0;
+    bottom: -7px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    animation: appear 0.2s linear;
+}
+
+@keyframes appear {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* début section quizz niveau 1 */
+
+.quizz {
+    height: 640vh;
+    background-color: var(--black2-color);
+}
+
+.qr {
+    padding-top: 20vh;
+    padding-left: 25vh;
+    text-align: justify;
+}
+
+.choice p {
+    margin: 5px 700px 5px 10px;
+    border: 1px solid grey;
+    padding-top: 0px;
+    background-color: grey;
+}
+
+.choice p input {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    width: 20px;
+    height: 20px;
+}
+
+
+/* quizz level 2 */
+
+.quizz2 {
+    height: 150vh;
+    background-color: var(--black2-color);
+}
+
+.level2 {
+    padding-top: 20vh;
+    padding-left: 25vh;
+    text-align: justify;
+}
+
+.btn3 {
+    background-image: var(--rouge-ad-color);
+    border: var(--rouge-ad-color);
+}
+
+
+/* footer */
+
+footer {
+    height: 30vh;
+    background-color: var(--black2-color);
+}
+
+.warner p {
+    font-size: x-small;
+}
+
+.dc .im {
+    margin-right: 2vh;
+}
+
+.dc .im2 {
+    margin-right: 1vh;
+}
+
+.reso img {
+    margin-right: 2vh;
+}

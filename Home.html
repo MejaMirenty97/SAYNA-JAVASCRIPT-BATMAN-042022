@@ -6,31 +6,325 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman_Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <!-- lien pour icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="Home.css">
+
+    <!-- CSS & BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets\css\Home.css">
 </head>
 
 <body>
-    <header class="Navigateur navbar navbar-expand-sm d-none d-sm-flex justify-content-around">
-        <div class="logobat">
-            <img src="Assets\Logos\logohome.png" alt="logohome.png">
+    <!-- Mise en place de la barre de navigation -->
+    <section class="batman">
+        <header class="Navigateur navbar navbar-expand-sm d-none d-sm-flex justify-content-between">
+            <div class="logobat">
+                <img src="Assets\Logos\logohome.png" alt="logohome.png">
+            </div>
+            <div class="Menu  navbar navbar-light d-none d-md-flex justify-content-around">
+                <ul class="liste container-fluid list-group-flush">
+                    <li class="active nav-item text-decoration-none list-group">
+                        <a href="Home.html" class="text-decoration-none">Home</a>
+                    </li>
+                    <li class="nav-item text-decoration-none list-group" style="margin-right: 30vh;">
+                        <a href="Game.html" class="text-decoration-none">Game</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Première section de la page Home -->
+        <section id="BruceW ">
+            <div class="batounet text-center align-items-center">
+                <div class="phrase text-light ">
+                    <p>Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City. Il est vengeur. Il est la nuit.
+                    </p>
+                    <p><span class="fw-bold">Il est Batman.</span></p>
+                </div>
+                <div class="botn">
+                    <a href="#batcine"><button class="voir btn-lg text-light col-2 mx-auto">voir le héros</button></a>
+                    <a href="#Nemesis"><button class="voir btn-lg text-light col-6 mx-auto">les adversaires</button></a>
+                </div>
+            </div>
+        </section>
+        <main class="scrol">
+            <a href="#BruceW"><img src="Assets\Logos\logo_bat_flèche.png" alt="logo_bat_flèche.png" class="project"></a>
+            <a href=""><img src="Assets\Logos\icon_facebook.png" alt="icon_facebook.png" class="project"></a>
+            <a href=""><img src="Assets\Logos\icon_ig.png" alt="icon_ig.png" class="project"></a>
+            <a href=""><img src="Assets\Logos\icon_tw.png" alt="icon_tw.png" class="project"></a>
+            <a href="#box"><img src="Assets\Logos\logo_bat_flèche_2.png" alt="logo_bat_flèche_2.png" class="project"></a>
+        </main>
+    </section>
+    <section class="cinema ">
+        <div class="fleche justify-content-center align-items-center text-center">
+            <img src="Assets\Logos\flèche_down_header.png" alt="flèche_down_header.png">
         </div>
-        <div class="Menu">
-            <ul class="liste">
-                <li>
-                    <a href="Home.html">Home</a>
-                </li>
-                <li>
-                    <a href="Game.html">Game</a>
-                </li>
-            </ul>
+        <div class="historique pb-lg-5">
+            <h1 class="text-white text-uppercase" id="batcine">Batman au cinéma</h1>
+            <p class="text-white fw-light lh-sm">Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le comic book Detective Comics en 1939. Batman se différencie
+                de Superman, alors héros majeur de DC, car il n’a aucun pouvoir. Il sera porté au cinema pour la première fois en 1943 par Lewis Wilson et bénéficiera de nombreux reboot, donnant l’occasion à de multiples acteurs d’interpréter l’homme
+                chauve souris. Voici les trois derniers :</p>
         </div>
-    </header>
+        <div class="carte d-flex justify-content-around pt-5">
+            <img src="Assets\Illustrations\Home\Bathome2.png" alt="Bathome2.png" width="20%">
+            <img src="Assets\Illustrations\Home\Bathome3.png" alt="Bathome3.png" width="20%">
+            <img src="Assets\Illustrations\Home\Bathome4.png" alt="Bathome4.png" width="20%">
+        </div>
+    </section>
+    <section class="diapo">
+        <div class="slides">
+            <!-- radio btn commencement -->
+            <!-- <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+            <input type="radio" name="radio-btn" id="radio7">
+            <input type="radio" name="radio-btn" id="radio8">
+            <input type="radio" name="radio-btn" id="radio9">
+            <input type="radio" name="radio-btn" id="radio10"> -->
+            <!-- fin -->
+            <!-- photos slide -->
+            <div class="slide">
+                <img src="Assets\Illustrations\Home\Batslider1.png" alt="Batslider1.png" width="100%" id="slide1">
+            </div>
+            <div class="slide">
+                <img src="Assets\Illustrations\Home\Batslider2.png" alt="Batslider2.png" id="slide2">
+            </div>
+            <div class="slide">
+                <img src="Assets\Illustrations\Home\Batslider3.png" alt="Batslider3.png" id="slide3">
+            </div>
+            <div class="slide">
+                <img src="Assets\Illustrations\Home\Batslider4.png" alt="Batslider4.png" id="slide4">
+            </div>
+            <div class="slide">
+                <img src="Assets\Illustrations\Home\Batslider5.png" alt="Batslider5.png" id="slide5">
+            </div>
+            <div class="slide">
+                <img src="Assets\Illustrations\Home\Batslider6.png" alt="Batslider6.png" id="slide6">
+            </div>
+            <div class="slide">
+                <img src="Assets\Illustrations\Home\Batslider7.png" alt="Batslider7.png" id="slide7">
+            </div>
+            <div class="slide">
+                <img src="Assets\Illustrations\Home\Batslider8.png" alt="Batslider8.png" id="slide8">
+            </div>
+            <div class="slide">
+                <img src="Assets\Illustrations\Home\Batslider9.png" alt="Batslider9.png" id="slide9">
+            </div>
+            <div class="slide">
+                <img src="Assets\Illustrations\Home\Batslider10.png" alt="Batslider10.png" id="slide10">
+            </div>
+
+        </div>
+    </section>
+    <section class="nemesis">
+        <div class="adversaires  pb-lg-5">
+            <h1 class="text-white text-uppercase" id="Nemesis">Némésis</h1>
+            <p class="text-white fw-light lh-sm">Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou psychopathes. Avec son introduction dans la Justice League il
+                aura l’occasion de se mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmis les derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :</p>
+        </div>
+        <div class="carte2 d-flex justify-content-around pt-5">
+            <img src="Assets\Illustrations\Home\Bathome5.png" alt="Bathome5.png" width="20%">
+            <img src="Assets\Illustrations\Home\Bathome6.png" alt="Bathome6.png" width="20%">
+            <img src="Assets\Illustrations\Home\Bathome7.png" alt="Bathome7.png" width="20%">
+        </div>
+    </section>
+    <section class="media">
+        <div class="titre pb-5">
+            <h1 class="multimedia text-white text-uppercase">Multimédia</h1>
+        </div>
+        <div class="synopsis pt-4 pb-5">
+            <figure class="d-flex justify-content-center align-items-center">
+                <img src="Assets\Illustrations\Home\Bathome8.png" alt="Bathome8.png" class="begin" width="30%">
+                <figcaption class="text-light ">A c t i o n , A d v e n t u r e</span> <br><span class="text-uppercase lh-lg" style="font-family: 'Space Grotesk', sans-serif; font-size: 12px;"> Batman Begins</span> <br> <span class="lh-lg">IMDB: <span
+                            class="eight"> 8.2</span></span> <br> Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de guerriers ninja
+                    dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.
+                </figcaption>
+            </figure>
+        </div>
+        <div class="bandes d-flex justify-content-around pt-5">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/UMgb3hQCb08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OiqPQ7L_C00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+        </div>
+    </section>
+    <section id="box">
+        <div class="contact text-light">
+            <h1>Prenons contact</h1>
+        </div>
+        <div class="newsletter text-light">
+            <div class="box text-center justify-content-center px-5">
+                <label for="basic-mail" class=" lbel form-label text-uppercase text-center pt-3">Adresse email</label>
+                <div class="input-group mb-5 px-5 pt-3">
+                    <input type="email" class="email text-light form-control" placeholder="Adresse email" aria-label="Adresse email" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="d-flex text-center justify-content-center px-5 ">
+                <div>
+                    <label for="souscrivez" class="letter text-light text-uppercase">Newsletter</label>
+                </div>
+                <div>
+                    <label for="souscrivez" class="label pt-4">En cochant cette case vous acceptez de recevoir l’actualité concernant les
+                    aventures de Batman :
+                        <input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter" >
+                </div>
+            </div>
+            <div class="deroulant text-center justify-content-center input-group mb-5 px-5 pt-3">
+                <select name="Langue" id="Choice-select" class="Langue form-control text-light">
+                    <option class="bg-primary">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                    <option class="bg-primary">Par jour</option>
+                    <option class="bg-primary">Par semaine</option>
+                    <option class="bg-primary">par mois</option>
+                </select>
+            </div>
+            <div class="bx text-center justify-content-center input-group mb-5 px-1 pt-3">
+                <input type="text" class="text form-control" placeholder="Souhaitez-vous recevoir des news" aria-label="Souhaitez-vous recevoir des news" aria-describedby="basic-addon2">
+            </div>
+            <div class="plateforme d-flex justify-content-center">
+                <div class="pf1">
+                    <a href="#"><button class="btn1  btn-lg col-6 fs-6 mx-auto">Des films</button></a>
+                </div>
+                <div class="pf1">
+                    <a href="#"><button class="btn1  btn-lg fs-6 col-1 mx-auto">Des comics</button></a>
+                </div>
+                <div class="pf1">
+                    <a href="#"><button class="btn1 btn-lg fs-6 col-1 mx-auto">De tout</button></a>
+                </div>
+            </div>
+            <div class="box text-center justify-content-center px-5">
+                <label for="text" class=" lbel form-label text-uppercase text-center pt-3">Message</label>
+                    <div class="input-group mb-5 px-5 pt-3">
+                        <input type="text" class="text form-control" placeholder="Laissez un commentaire pour la communauté" aria-label="Laissez un commentaire pour la communauté" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="boutton text-center justify-content-center text-uppercase px-5">
+                    <button type="submit" class="btn btn-success btn-lg col-2 mx-auto">Confirmer</button>
+                </div>
+            </div>
+    </section>
+    <section class="citation d-flex justify-content-around align-items-center">
+        <div>
+            <div class="gui1">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_1.png" alt="icon_guillemets_1.png">
+            </div>
+            <div class="textes text-center text-light ">
+                <p>La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles. <br> <span class="cit lh-lg">The Dark Knight : Le Chevalier Noir </span> <br> <span class="cit lh-lg">Le Joker à Batman (2008)</span></p>
+            </div>
+            <div class="gui2">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_2.png" alt="icon_guillemets_2.png">
+            </div>
+        </div>
+        <!-- <div>
+            <div class="gui1">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_1.png" alt="icon_guillemets_1.png">
+             </div>
+            <div class="texte">
+                <p></p>
+            </div>
+            <div class="gui2">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_2.png" alt="icon_guillemets_2.png">
+            </div>
+        </div>
+        <div>
+            <div class="gui1">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_1.png" alt="icon_guillemets_1.png">
+             </div>
+            <div class="texte">
+                <p></p>
+            </div>
+            <div class="gui2">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_2.png" alt="icon_guillemets_2.png">
+            </div>
+        </div>
+        <div>
+            <div class="gui1">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_1.png" alt="icon_guillemets_1.png">
+             </div>
+            <div class="texte">
+                <p></p>
+            </div>
+            <div class="gui2">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_2.png" alt="icon_guillemets_2.png">
+            </div>
+        </div>
+        <div>
+            <div class="gui1">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_1.png" alt="icon_guillemets_1.png">
+             </div>
+            <div class="texte">
+                <p></p>
+            </div>
+            <div class="gui2">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_2.png" alt="icon_guillemets_2.png">
+            </div>
+        </div>
+        <div>
+            <div class="gui1">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_1.png" alt="icon_guillemets_1.png">
+             </div>
+            <div class="texte">
+                <p></p>
+            </div>
+            <div class="gui2">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_2.png" alt="icon_guillemets_2.png">
+            </div>
+        </div>
+        <div>
+            <div class="gui1">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_1.png" alt="icon_guillemets_1.png">
+             </div>
+            <div class="texte">
+                <p></p>
+            </div>
+            <div class="gui2">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_2.png" alt="icon_guillemets_2.png">
+            </div>
+        </div>
+        <div>
+            <div class="gui1">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_1.png" alt="icon_guillemets_1.png">
+             </div>
+            <div class="texte">
+                <p></p>
+            </div>
+            <div class="gui2">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_2.png" alt="icon_guillemets_2.png">
+            </div>
+        </div>
+        <div>
+            <div class="gui1">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_1.png" alt="icon_guillemets_1.png">
+             </div>
+            <div class="texte">
+                <p></p>
+            </div>
+            <div class="gui2">
+                <img src="Assets\Logos\Icones en + dans Home\icon_guillemets_2.png" alt="icon_guillemets_2.png">
+            </div>
+        </div> -->
+    </section>
+    <footer>
+        <div class="warner justify-content-around align-items-center">
+            <p class="text-center text-light"><img src="Assets\Logos\icon_WB.png" alt="icon_WB.png"> Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves. </p>
+        </div>
+        <div class="sayna d-flex justify-content-center align-items-center">
+            <div class="dc">
+                <img src="Assets\Logos\icon_DC.png" alt="icon_DC.png" width="40%" class="im">
+                <img src="Assets\Logos\logo_sayna_white.png" alt="logo_sayna_white.png" width="40%" class="im2">
+            </div>
+            <div class="reso">
+                <img src="Assets\Logos\icon_facebook.png" alt="icon_facebook.png">
+                <img src="Assets\Logos\icon_ig.png" alt="icon_ig.png">
+                <img src="Assets\Logos\icon_tw.png" alt="icon_tw.png">
+            </div>
+        </div>
+    </footer>
 
 
-    <script src="Home.js"></script>
+    <script src="Assets\js\Home.js"></script>
 </body>
 
 </html>

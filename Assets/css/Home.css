@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400&family=Rajdhani:wght@500&family=Raleway:wght@400;500&display=swap');
+
+/* font-family: 'Rajdhani', sans-serif; css rules rajdhani */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400&family=Rajdhani:wght@500&family=Raleway:wght@400;500&family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400&family=Rajdhani:wght@500&family=Raleway:wght@400;500&family=Space+Grotesk:wght@300;400&display=swap');
+
+/* font-family: 'Space Grotesk', sans-serif; css rules space grotesk */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --yellow-color: #FFFF00;
+    --black1-color: #0D0E09;
+    --black2-color: #000000;
+    --white-color: #ffffff;
+    --blue-color: #19567D;
+    --red-color: #B11313;
+    --moutarde-color: #F8F184;
+    --bleu-ad-color: linear-gradient(to right bottom, #adc09f, #19587d);
+    --rouge-ad-color: linear-gradient(to right, #d3af82, #890008);
+    --az-color: #C4C4C4;
+    --grey-color: linear-gradient(to right bottom, #9ea68f, #010405);
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 36px;
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+figcaption {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+}
+
+li a {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 36px;
+}
+
+label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+input {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+option {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+button {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+}
+
+
+/* section header */
+
+.Menu {
+    width: 400px;
+}
+
+.Navigateur {
+    padding-left: 25vh;
+    padding-right: 20vh;
+}
+
+.batman {
+    height: 130vh;
+    background-image: url("../Illustrations/Home/Bathome1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.batounet {
+    position: relative;
+    padding-top: 45vh;
+}
+
+.phrase {
+    width: 500px;
+    margin-left: 70vh;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.scrol {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    left: 85%;
+    top: 25%;
+}
+
+.scrol a img {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.voir {
+    margin-left: 5vh;
+    margin-right: 5vh;
+    width: 120px;
+    border: none;
+    border-radius: 0;
+    background-image: var(--rouge-ad-color);
+    opacity: 75%;
+    font-size: small;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.liste li {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.logobat {
+    cursor: pointer;
+}
+
+.liste li a {
+    color: var(--white-color);
+    transition: all 1s linear;
+}
+
+.liste li a:hover {
+    color: var(--yellow-color);
+}
+
+li.active::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: var(--white-color);
+    left: 0;
+    bottom: -7px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    animation: appear 0.2s linear;
+}
+
+@keyframes appear {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* univers batman */
+
+.cinema {
+    height: 150vh;
+    background-color: var(--black2-color);
+}
+
+.historique {
+    padding-top: 20vh;
+    padding-left: 25vh;
+    text-align: justify;
+}
+
+.historique p {
+    width: 850px;
+}
+
+.carte {
+    padding-left: 13vh;
+    padding-right: 20vh;
+}
+
+
+/* diapo */
+
+.diapo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+
+/* .navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+} */
+
+
+/* .manual-btn {
+    border: 2px solid var(--blue-color);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+} */
+
+.manual-btn:not(:last-child) {
+    margin-right: 10vh;
+}
+
+.manual-btn:hover {
+    background: var(--blue-color);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2 :checked~.first {
+    margin-left: 20%;
+}
+
+#radio3:checked~.first {
+    margin-left: 40%;
+}
+
+#radio4:checked~.first {
+    margin-left: 60%;
+}
+
+#radio5:checked~.first {
+    margin-left: 80%;
+}
+
+#radio6:checked~.first {
+    margin-left: 100%;
+}
+
+#radio7:checked~.first {
+    margin-left: 120%;
+}
+
+#radio8:checked~.first {
+    margin-left: 140%;
+}
+
+#radio9:checked~.first {
+    margin-left: 160%;
+}
+
+#radio10:checked~.first {
+    margin-left: 180%;
+}
+
+
+/* .navigation-auto {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    border: 2px solid var(--blue-color);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+} */
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: var(--blue-color);
+}
+
+#radio2:checked~.navigation-auto .auto-btn1 {
+    background: var(--blue-color);
+}
+
+#radio3:checked~.navigation-auto .auto-btn1 {
+    background: var(--blue-color);
+}
+
+#radio4:checked~.navigation-auto .auto-btn1 {
+    background: var(--blue-color);
+}
+
+#radio5:checked~.navigation-auto .auto-btn1 {
+    background: var(--blue-color);
+}
+
+#radio6:checked~.navigation-auto .auto-btn1 {
+    background: var(--blue-color);
+}
+
+#radio7:checked~.navigation-auto .auto-btn1 {
+    background: var(--blue-color);
+}
+
+#radio8:checked~.navigation-auto .auto-btn1 {
+    background: var(--blue-color);
+}
+
+#radio9:checked~.navigation-auto .auto-btn1 {
+    background: var(--blue-color);
+}
+
+#radio10:checked~.navigation-auto .auto-btn1 {
+    background: var(--blue-color);
+}
+
+
+/* Némésis */
+
+.nemesis {
+    height: 135vh;
+    background-color: var(--black2-color);
+}
+
+.adversaires {
+    padding-top: 20vh;
+    padding-left: 25vh;
+    text-align: justify;
+}
+
+.adversaires p {
+    width: 850px;
+}
+
+.carte2 {
+    padding-left: 13vh;
+    padding-right: 20vh;
+}
+
+
+/* section multimédia */
+
+.media {
+    height: 135vh;
+    background-color: var(--black2-color);
+}
+
+.titre {
+    padding-left: 25vh;
+    text-align: justify;
+}
+
+figcaption {
+    text-align: justify;
+    width: 280px;
+    font-size: x-small;
+    padding-left: 2vh;
+}
+
+.eight {
+    color: var(--yellow-color);
+}
+
+figure {
+    margin: 5px 440px 5px 480px;
+    border: 1px solid white;
+    padding-top: 0px;
+    border-radius: 10px;
+    background-image: var(--bleu-ad-color);
+}
+
+
+/* Newsletter */
+
+#box {
+    height: 135vh;
+    background-image: var(--grey-color);
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.email {
+    margin-right: 23vh;
+    margin-left: 23vh;
+    border-top-style: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--white-color);
+    background: none;
+    border-left-style: none;
+    border-right-style: none;
+    color: var(--black1-color);
+}
+
+.Langue {
+    margin-right: 30vh;
+    margin-left: 30vh;
+    border-top-style: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--white-color);
+    background: none;
+    border-left-style: none;
+    border-right-style: none;
+    color: var(--black1-color);
+}
+
+.text {
+    margin-right: 30vh;
+    margin-left: 30vh;
+    border-top-style: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--white-color);
+    background: none;
+    border-left-style: none;
+    border-right-style: none;
+    color: var(--black1-color);
+}
+
+.btn1 {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    width: 120px;
+    background-image: var(--grey-color);
+    border-radius: 0;
+    background: none;
+    border-color: 1px solid var(--bleu-ad-color);
+}
+
+.btn {
+    background-image: var(--rouge-ad-color);
+    border: var(--rouge-ad-color);
+    background-position-y: center;
+}
+
+.pf1 {
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+
+/* citation et footer */
+
+.citation {
+    height: 90vh;
+    background-color: var(--black2-color);
+}
+
+.textes {
+    width: 400px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.cit {
+    font-size: small;
+    font-weight: lighter;
+}
+
+.gui1 {
+    position: absolute;
+    top: 790vh;
+    right: 80%;
+    object-position: fixed;
+}
+
+.gui2 {
+    position: absolute;
+    left: 80%;
+}
+
+footer {
+    height: 30vh;
+    background-color: var(--black2-color);
+}
+
+.warner p {
+    font-size: x-small;
+}
+
+.dc .im {
+    margin-right: 2vh;
+}
+
+.dc .im2 {
+    margin-right: 1vh;
+}
+
+.reso img {
+    margin-right: 2vh;
+}

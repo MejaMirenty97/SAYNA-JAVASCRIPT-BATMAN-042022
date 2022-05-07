@@ -9,12 +9,264 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="Game.css">
+    <link rel="stylesheet" href="Assets\css\Game.css">
 </head>
+<!-- Mise en place de la barre de navigation -->
+<section class="batman">
+    <header class="Navigateur navbar navbar-expand-sm d-none d-sm-flex justify-content-between">
+        <div class="logobat">
+            <img src="Assets\Logos\logohome.png" alt="logohome.png">
+        </div>
+        <div class="Menu  navbar navbar-light d-none d-md-flex justify-content-around">
+            <ul class="liste container-fluid list-group-flush">
+                <li class="active nav-item text-decoration-none list-group">
+                    <a href="Home.html" class="text-light text-decoration-none">Home</a>
+                </li>
+                <li class="nav-item text-decoration-none list-group" style="margin-right: 30vh;">
+                    <a href="Game.html" class="text-light text-decoration-none">Game</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Première section de la page Game -->
+    <section id="Game">
+        <div class="letsplay text-light text-uppercase ">
+            <h1>LET’s play a</h1>
+            <h1>little game...</h1>
+        </div>
+    </section>
+    <section class="scroll">
+        <a href="#Game"><img src="Assets\Logos\logo_bat_flèche.png" alt="logo_bat_flèche.png"></a>
+        <a href=""><img src="Assets\Logos\icon_facebook.png" alt="icon_facebook.png"></a>
+        <a href=""><img src="Assets\Logos\icon_ig.png" alt="icon_ig.png"></a>
+        <a href=""><img src="Assets\Logos\icon_tw.png" alt="icon_tw.png"></a>
+        <a href="#box"><img src="Assets\Logos\logo_bat_flèche_2.png" alt="logo_bat_flèche_2.png"></a>
+    </section>
+</section>
+<section class="quizz">
+    <div class="fleche justify-content-center align-items-center text-center">
+        <img src="Assets\Logos\flèche_down_header.png" alt="flèche_down_header.png">
+    </div>
+    <div class="qr pb-lg-5">
+        <div class="niv1 pb-4">
+            <h1 class="text-light text-uppercase ">Quizz niveau 1</h1>
+        </div>
+        <div class="salv1 py-2">
+            <div class="question1">
+                <h4 class="text-white " id="batcine">
+                    Quel est l’autre nom de l’Homme-Mystère ?
+                </h4>
+            </div>
+            <div class="choice py-4">
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Le Sphinx</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Saphir</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Le Joker</p>
+            </div>
+        </div>
+        <div class="salv1 py-2">
+            <div class="question1">
+                <h4 class="text-white" id="batcine">
+                    Quelle est l’ancienne profession de Harley Quinn ?
+                </h4>
+            </div>
+            <div class="choice py-4">
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Infirmière</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Psychiatre</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Dentiste</p>
+            </div>
+        </div>
+        <div class="salv1 py-2">
+            <div class="question1">
+                <h4 class="text-white" id="batcine">
+                    Quel est l’objet fétiche de Double Face ?
+                </h4>
+            </div>
+            <div class="choice py-4">
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Une pièce</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Un livre</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Un couteau</p>
+            </div>
+        </div>
+        <div class="salv1 py-2">
+            <div class="question1">
+                <h4 class="text-white" id="batcine">
+                    Quelle ville Batman défend-il ?
+                </h4>
+            </div>
+            <div class="choice py-4">
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Gotham City</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Starling City</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Hell’s Kitchen</p>
+            </div>
+        </div>
+        <div class="salv1 py-2">
+            <div class="question1">
+                <h4 class="text-white" id="batcine">
+                    Tim Burtin a réalisé deux Batman, qui jouait Batman ?
+                </h4>
+            </div>
+            <div class="choice py-4">
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Georges Clooney</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Val Kilmer</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Mickael Keaton</p>
+            </div>
+        </div>
+        <div class="salv1 py-2">
+            <div class="question1">
+                <h4 class="text-white" id="batcine">
+                    Dans son premier Batman (1989) Jack Nicholson jouait :
+                </h4>
+            </div>
+            <div class="choice py-4">
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Le Pingouin</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">L’Homme Mystère</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Le Joker</p>
+            </div>
+        </div>
+        <div class="salv1 py-2">
+            <div class="question1">
+                <h4 class="text-white" id="batcine">
+                    Quel est le prénom des parents du jeune Bruce Wayne ?
+                </h4>
+            </div>
+            <div class="choice py-4">
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Thomas et Martha</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Elaine et Georges</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Martha et James</p>
+            </div>
+        </div>
+        <div class="salv1 py-2">
+            <div class="question1">
+                <h4 class="text-white" id="batcine">
+                    Qui interprète le Joker en 2008 ?
+                </h4>
+            </div>
+            <div class="choice py-4">
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Heath Legder</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Haeth Legder</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Heath Ledger</p>
+            </div>
+        </div>
+        <div class="salv1 py-2">
+            <div class="question1">
+                <h4 class="text-white" id="batcine">
+                    En quelle année Robin fait il sa première apparition ?
+                </h4>
+            </div>
+            <div class="choice py-4">
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">1940</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">1939</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">1941</p>
+            </div>
+        </div>
+        <div class="salv1 py-2">
+            <div class="question1">
+                <h4 class="text-white" id="batcine">
+                    Qui est la fille de Batman et Catwoman (Earth - 2) ?
+                </h4>
+            </div>
+            <div class="choice py-4">
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Oracle</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Huntress</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Black Canary</p>
+            </div>
+        </div>
+        <div class="salv1 py-2">
+            <div class="question1">
+                <h4 class="text-white" id="batcine">
+                    Qui est Jonathan Crane ?
+                </h4>
+            </div>
+            <div class="choice py-4">
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">L’Épouvantail</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Le Joker</p>
+                <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Hugo Strange</p>
+            </div>
+            <div class="salv1 py-2">
+                <div class="question1">
+                    <h4 class="text-white" id="batcine">
+                        Batman c'est aussi le nom d'une ville en...
+                    </h4>
+                </div>
+                <div class="choice py-4">
+                    <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Turquie</p>
+                    <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Islande</p>
+                    <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Allemagne</p>
+                </div>
+            </div>
+            <div class="salv1 py-2">
+                <div class="question1">
+                    <h4 class="text-white" id="batcine">
+                        Qui a produit Batman en 1964 ?
+                    </h4>
+                </div>
+                <div class="choice py-4">
+                    <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Stanley Kubrick</p>
+                    <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Andy Warhol</p>
+                    <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Peter Jackson</p>
+                </div>
+            </div>
+            <div class="salv1 py-2">
+                <div class="question1">
+                    <h4 class="text-white" id="batcine">
+                        Quel vilain apparaît pour la première fois dans le Batman 232 ?
+                    </h4>
+                </div>
+                <div class="choice py-4">
+                    <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Le Pingouin</p>
+                    <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Ra’s al Ghul</p>
+                    <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Poison Ivy</p>
+                </div>
+            </div>
+            <div class="salv1 py-2">
+                <div class="question1">
+                    <h4 class="text-white" id="batcine">
+                        Qui est l’interprète de Catwoman dans le nouveau Batman de Matt Reeves (2022) ?
+                    </h4>
+                </div>
+                <div class="choice py-4">
+                    <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Emma Watson</p>
+                    <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Gigi Hadid</p>
+                    <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Lola Iolani Momoa</p>
+                    <p class="text-white fw-light lh-lg"><input type="checkbox" id="souscrivez" name="souscrivez" value="newsletter">Zoë Kravitz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="quizz2">
+    <div class="level2 pb-2">
+        <div class="niv1 pb-4">
+            <h1 class="text-light text-uppercase ">Quiz niveau 2 : connaissez vous bien le chevalier noir ?</h1>
+        </div>
+    </div>
+    <div class="ready text-center justify-content-center text-uppercase">
+        <div class="batback pb-5">
+            <img src="Assets\Illustrations\Game\Batgame2.png" alt="Batgame2.png">
+        </div>
+        <div class="boutton ">
+            <button class="btn3 btn-lg text-light col-3 mx-auto">DÉMARRER LE QUIZZ</button>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="warner justify-content-around align-items-center">
+        <p class="text-center text-light"><img src="Assets\Logos\icon_WB.png" alt="icon_WB.png"> Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves. </p>
+    </div>
+    <div class="sayna d-flex justify-content-center align-items-center">
+        <div class="dc">
+            <img src="Assets\Logos\icon_DC.png" alt="icon_DC.png" width="40%" class="im">
+            <img src="Assets\Logos\logo_sayna_white.png" alt="logo_sayna_white.png" width="40%" class="im2">
+        </div>
+        <div class="reso">
+            <img src="Assets\Logos\icon_facebook.png" alt="icon_facebook.png">
+            <img src="Assets\Logos\icon_ig.png" alt="icon_ig.png">
+            <img src="Assets\Logos\icon_tw.png" alt="icon_tw.png">
+        </div>
+    </div>
+</footer>
 
-
-
-<script src="Game.js"></script>
+<script src="Assets\js\Game.js"></script>
 
 <body>
 
